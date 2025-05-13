@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "seed": "pnpm run src/seed.ts"
   },
   "dependencies": {
     "@payloadcms/db-mongodb": "^3.37.0",
