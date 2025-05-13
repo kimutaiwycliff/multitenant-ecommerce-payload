@@ -21,7 +21,8 @@ const Layout = async ({ children }: LayoutProps) => {
       parent: {
         exists: false,
       },
-    }
+    },
+    sort: ['name'],
   });
   const formattedData = data.docs.map((doc) => {
     return {
@@ -32,8 +33,7 @@ const Layout = async ({ children }: LayoutProps) => {
         subcategories: undefined,
       })),
     };
-
-  })
+  });
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar />
